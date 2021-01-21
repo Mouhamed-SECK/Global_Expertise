@@ -234,7 +234,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2TextBox4.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="nameTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAFVxJREFUeF7t
         3VFy3Dx2BtBsJavJS6r+reQ5NdZuZkFaUcJut21Z+iR1NwEQuDxTdV6+mhnbEglcAhfkf/zX//w3AHAy
@@ -331,7 +331,7 @@
         f74tlHUtj42XAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2TextBox2.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="firstNameTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAFVxJREFUeF7t
         3VFy3Dx2BtBsJavJS6r+reQ5NdZuZkFaUcJut21Z+iR1NwEQuDxTdV6+mhnbEglcAhfkf/zX//w3AHAy
@@ -428,7 +428,7 @@
         f74tlHUtj42XAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2TextBox3.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="emailTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAFVxJREFUeF7t
         3VFy3Dx2BtBsJavJS6r+reQ5NdZuZkFaUcJut21Z+iR1NwEQuDxTdV6+mhnbEglcAhfkf/zX//w3AHAy
