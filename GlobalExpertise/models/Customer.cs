@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GlobalExpertise.models
 {
-    class Customer 
+    public class Customer 
     {
         
         public int Id { get; set; }

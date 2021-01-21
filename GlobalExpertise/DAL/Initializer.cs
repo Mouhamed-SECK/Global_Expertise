@@ -15,7 +15,7 @@ namespace GlobalExpertise.DAL
             new Customer{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Address= "Km unite 5 villa 586", IdCardNumber="44852765668658"},
             new Customer{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Address= "Km unite 5 villa 586", IdCardNumber="44852765668658"},
             };
-            customers.ForEach(s => context.customers.Add(s));
+            customers.ForEach(s => context.Customers.Add(s));
             context.SaveChanges();
 
             var employees = new List<Employee>
@@ -25,7 +25,7 @@ namespace GlobalExpertise.DAL
             new Employee{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Password= "passer", Departement= DEPARTEMENT.Livraison},
             new Employee{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Password= "passer", Departement=DEPARTEMENT.Comptable},
             };
-            employees.ForEach(s => context.employees.Add(s));
+            employees.ForEach(s => context.Employees.Add(s));
             context.SaveChanges();
 
 

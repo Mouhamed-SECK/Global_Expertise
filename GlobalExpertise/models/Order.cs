@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace GlobalExpertise.models
 {
@@ -10,14 +8,20 @@ namespace GlobalExpertise.models
     {
         NEW, WAITING, IN_PROGRESS 
     }
-    class Order
+    public class Order
     {
         public int OrderId { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string OrderNumber { get; set; }
         public ORDER_STATUS Status { get; set; }
         public DateTime orderedDate { get; set; }
         public int CustomerID { get; set; }
 
         public virtual Customer customer { get; set; }
+
+        public virtual ICollection<PurchaseOrder> PurchaseOrders { get; set; }
+
     }
 }

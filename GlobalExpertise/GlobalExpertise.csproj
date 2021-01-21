@@ -74,10 +74,21 @@
     <Compile Include="Migrations\202101211502222_custumerEmployeeOrder.designer.cs">
       <DependentUpon>202101211502222_custumerEmployeeOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101212119376_orderProductCategory.cs" />
+    <Compile Include="Migrations\202101212119376_orderProductCategory.designer.cs">
+      <DependentUpon>202101212119376_orderProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101212121567_updateCategoryColName.cs" />
+    <Compile Include="Migrations\202101212121567_updateCategoryColName.designer.cs">
+      <DependentUpon>202101212121567_updateCategoryColName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="models\Category.cs" />
     <Compile Include="models\Customer.cs" />
     <Compile Include="models\Employee.cs" />
     <Compile Include="models\Order.cs" />
+    <Compile Include="models\Product.cs" />
+    <Compile Include="models\PurchaseOrder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="views\Dashbord.cs">
@@ -106,6 +117,12 @@
     </Compile>
     <EmbeddedResource Include="Migrations\202101211502222_custumerEmployeeOrder.resx">
       <DependentUpon>202101211502222_custumerEmployeeOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101212119376_orderProductCategory.resx">
+      <DependentUpon>202101212119376_orderProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101212121567_updateCategoryColName.resx">
+      <DependentUpon>202101212121567_updateCategoryColName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

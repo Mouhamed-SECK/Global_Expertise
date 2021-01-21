@@ -5,7 +5,7 @@ namespace GlobalExpertise.models
 
     public enum DEPARTEMENT { Commande, Livraison, Comptable, Admin };
 
-    class Employee
+    public class Employee
     {
         public int Id { get; set; }
 
