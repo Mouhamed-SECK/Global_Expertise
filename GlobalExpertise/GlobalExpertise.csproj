@@ -68,6 +68,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\EnterpriseContext.cs" />
+    <Compile Include="DAL\Initializer.cs" />
+    <Compile Include="Migrations\202101211502222_custumerEmployeeOrder.cs" />
+    <Compile Include="Migrations\202101211502222_custumerEmployeeOrder.designer.cs">
+      <DependentUpon>202101211502222_custumerEmployeeOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="models\Customer.cs" />
+    <Compile Include="models\Employee.cs" />
+    <Compile Include="models\Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="views\Dashbord.cs">
@@ -94,6 +104,9 @@
     <Compile Include="views\Purchase.Designer.cs">
       <DependentUpon>Purchase.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Migrations\202101211502222_custumerEmployeeOrder.resx">
+      <DependentUpon>202101211502222_custumerEmployeeOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -131,7 +144,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="models\" />
     <Folder Include="services\" />
   </ItemGroup>
   <ItemGroup>
