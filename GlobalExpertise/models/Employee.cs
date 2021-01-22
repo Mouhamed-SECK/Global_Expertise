@@ -3,7 +3,7 @@
 namespace GlobalExpertise.models
 {
 
-    public enum DEPARTEMENT { Commande, Livraison, Comptable, Admin };
+
 
     public class Employee
     {
@@ -25,10 +25,13 @@ namespace GlobalExpertise.models
         [StringLength(150)]
         public string Password { get; set; }
 
-        [Required]
-        public DEPARTEMENT Departement { get; set; }
+        public int DepartementId { get; set; }
 
-      
+
+        public virtual Departement Departement { get; set; }
+
+
+
 
     }
 }

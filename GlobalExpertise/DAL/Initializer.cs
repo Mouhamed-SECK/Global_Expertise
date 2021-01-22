@@ -20,10 +20,7 @@ namespace GlobalExpertise.DAL
 
             var employees = new List<Employee>
             {
-            new Employee{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Password= "passer", Departement= DEPARTEMENT.Commande},
-            new Employee{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Password= "passer", Departement= DEPARTEMENT.Admin},
-            new Employee{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Password= "passer", Departement= DEPARTEMENT.Livraison},
-            new Employee{Name="Carson",FirstName="Alexander",Email="customer@gmail.com",Password= "passer", Departement=DEPARTEMENT.Comptable},
+           
             };
             employees.ForEach(s => context.Employees.Add(s));
             context.SaveChanges();
