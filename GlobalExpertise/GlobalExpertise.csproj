@@ -82,9 +82,18 @@
     <Compile Include="Migrations\202101212121567_updateCategoryColName.designer.cs">
       <DependentUpon>202101212121567_updateCategoryColName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101221959185_departement.cs" />
+    <Compile Include="Migrations\202101221959185_departement.designer.cs">
+      <DependentUpon>202101221959185_departement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101222112166_departementColUpdate.cs" />
+    <Compile Include="Migrations\202101222112166_departementColUpdate.designer.cs">
+      <DependentUpon>202101222112166_departementColUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="models\Category.cs" />
     <Compile Include="models\Customer.cs" />
+    <Compile Include="models\Departement.cs" />
     <Compile Include="models\Employee.cs" />
     <Compile Include="models\Order.cs" />
     <Compile Include="models\Product.cs" />
@@ -96,6 +105,12 @@
     </Compile>
     <Compile Include="views\Dashbord.designer.cs">
       <DependentUpon>Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\SplashScreen.cs">
       <SubType>Form</SubType>
@@ -124,6 +139,12 @@
     <EmbeddedResource Include="Migrations\202101212121567_updateCategoryColName.resx">
       <DependentUpon>202101212121567_updateCategoryColName.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101221959185_departement.resx">
+      <DependentUpon>202101221959185_departement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101222112166_departementColUpdate.resx">
+      <DependentUpon>202101222112166_departementColUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -137,6 +158,9 @@
     <EmbeddedResource Include="views\Dashbord.resx">
       <DependentUpon>Dashbord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +171,8 @@
       <DependentUpon>Purchase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Departement.datasource" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Employee.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
