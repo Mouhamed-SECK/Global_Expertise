@@ -1,151 +1,31 @@
-﻿using GlobalExpertise.views;
-using System;
-using System.Drawing;
-using System.Linq;
+﻿using System;
 using System.Windows.Forms;
 using GlobalExpertise.models;
-using GlobalExpertise.DAL;
-using System.Data;
+using GlobalExpertise.views;
 
 namespace GlobalExpertise
 {
     public partial class Dashbord : Form
     {
-         EnterpriseContext databaseContext;
+       
         Employee loggedEmployee;
         public Dashbord(Employee loggedEmployee)
         {
-            this.loggedEmployee = loggedEmployee;
+            this.loggedEmployee = loggedEmployee;        
             InitializeComponent();
-          
         }
+
+  
+
         private void Dashbord_Load(object sender, EventArgs e)
         {
-            this.databaseContext = new EnterpriseContext();
-            employeeBindingSource.DataSource = databaseContext.Employees.ToList();
-            departementBindingSource.DataSource = databaseContext.Departements.ToList();
-
-        }
-        private void BrowseBtn_click(object sender, EventArgs e)
-        {
-            using(OpenFileDialog ofd = new OpenFileDialog() { Filter ="JPEG|*.jpg"})
-            {
-                if(ofd.ShowDialog() == DialogResult.OK)
-                {
-                    guna2PictureBox1.Image = Image.FromFile(ofd.FileName);
-                    Employee employee = employeeBindingSource.Current as Employee;
-                    if (employee != null)
-                    {
-                        // set url image
-                    }
-                }
-            }
+            this.GetViewConfiguration("CustomerCreation");
+            name.Text = loggedEmployee.Name;
+            departement.Text = loggedEmployee.Departement.Name;
         }
 
-        private async void SaveBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (MessageBox.Show("Do you want to save the changes?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    //End edit data & save
-                    employeeBindingSource.EndEdit();
-                    await databaseContext.SaveChangesAsync();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private async void AddBtn_Click(object sender, EventArgs e)
-        {
-            using (EmployeeForm popup = new EmployeeForm(new Employee() { Password ="passer" }))
-            {
-                if (popup.ShowDialog() == DialogResult.OK)
-                {
-                    try
-                    {
-                        employeeBindingSource.Add(popup.employee);
-                        databaseContext.Employees.Add(popup.employee);
-                        await databaseContext.SaveChangesAsync();
-                        employeeDataGrid.Refresh();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK);
-                    }
-                }
-
-            }
-        }
-        private async void EditBtn_Click(object sender, EventArgs e)
-        {
-            Employee employee = employeeBindingSource.Current as Employee;
-            if (employee != null)
-            {
-                using (EmployeeForm frm = new EmployeeForm(employee))
-                {
-                    if (frm.ShowDialog() == DialogResult.OK)
-                    {
-                        try
-                        {
-                            //End edit & save data to sql database
-                            employeeBindingSource.EndEdit();
-                            await databaseContext.SaveChangesAsync();
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
-            }
-
-        }
-
-
-        private async void DeleteBtn_Click(object sender, EventArgs e)
-        {
-            //Delete data from binding source, then save to sql database
-            if (MessageBox.Show("Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                int rows = employeeDataGrid.RowCount;
-                for (int i = rows - 1; i >= 0; i--)
-                {
-                    if (employeeDataGrid.Rows[i].Selected)
-                    {
-                        databaseContext.Employees.Remove(employeeDataGrid.Rows[i].DataBoundItem as Employee);
-                        employeeBindingSource.RemoveAt(employeeDataGrid.Rows[i].Index);
-                        await databaseContext.SaveChangesAsync();
-                    }
-                }
-            }
-        }
-
-        private void RefreshBtn_Click(object sender, EventArgs e)
-        {        
-            Cursor.Current = Cursors.WaitCursor;
-            employeeBindingSource.DataSource = databaseContext.Employees.ToList();
-            departementBindingSource.DataSource = databaseContext.Departements.ToList();
-            Cursor.Current = Cursors.Default; 
-        }
-
-        private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e ) {
-            if (e.KeyChar == (char)13) {
-
-                employeeBindingSource.Filter = employeeDataGrid.Columns[3].HeaderText.ToString() + " LIKE '%" + searchTextBox.Text.Trim() + "" ;
-            employeeDataGrid.DataSource = employeeBindingSource;
-            }
-        }
-
-        private void searchTextBox_TextChanged(object sender, EventArgs e)
-        {
-                        //filterSource.DataSource = employeeDataGrid.DataSource;
-        }
-
-//BindingSource filterSource = new BindingSource();
-        private void logoutBtn_Click(object sender, EventArgs e)
+       
+        private void LogoutBtn_Click(object sender, EventArgs e)
         {
             using(Login login = new Login())
             {
@@ -153,5 +33,34 @@ namespace GlobalExpertise
                 login.ShowDialog();
             }
         }
+
+        private void Employees_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            GetViewConfiguration("EmployeCreation");
+        }
+        private void Customers_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            GetViewConfiguration("CustomerCreation");
+        }
+
+     
+
+        private void GetViewConfiguration(string viewName)
+        {
+            var viewToInstantiate = "GlobalExpertise.views." + viewName + ", GlobalExpertise";
+            var objectType = Type.GetType(viewToInstantiate);
+            Form view = (Form)Activator.CreateInstance(objectType);
+            view.FormBorderStyle = FormBorderStyle.None;
+            view.Dock = DockStyle.Fill;
+            view.TopLevel = false;
+            view.TopMost = true;
+            panelContainer.Controls.Add(view);
+            view.Show();
+        }
+
+      
     }
+    
 }
