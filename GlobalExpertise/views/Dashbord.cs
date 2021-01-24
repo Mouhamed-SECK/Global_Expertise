@@ -5,21 +5,20 @@ using System.Linq;
 using System.Windows.Forms;
 using GlobalExpertise.models;
 using GlobalExpertise.DAL;
-
+using System.Data;
 
 namespace GlobalExpertise
 {
     public partial class Dashbord : Form
     {
          EnterpriseContext databaseContext;
-
-        public Dashbord()
+        Employee loggedEmployee;
+        public Dashbord(Employee loggedEmployee)
         {
+            this.loggedEmployee = loggedEmployee;
             InitializeComponent();
           
         }
-
-
         private void Dashbord_Load(object sender, EventArgs e)
         {
             this.databaseContext = new EnterpriseContext();
@@ -27,8 +26,7 @@ namespace GlobalExpertise
             departementBindingSource.DataSource = databaseContext.Departements.ToList();
 
         }
-
-        private void browseBtn_click(object sender, EventArgs e)
+        private void BrowseBtn_click(object sender, EventArgs e)
         {
             using(OpenFileDialog ofd = new OpenFileDialog() { Filter ="JPEG|*.jpg"})
             {
@@ -44,9 +42,7 @@ namespace GlobalExpertise
             }
         }
 
-
-
-        private async void saveBtn_Click(object sender, EventArgs e)
+        private async void SaveBtn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -70,8 +66,6 @@ namespace GlobalExpertise
                 {
                     try
                     {
-                        
-                    
                         employeeBindingSource.Add(popup.employee);
                         databaseContext.Employees.Add(popup.employee);
                         await databaseContext.SaveChangesAsync();
@@ -85,7 +79,7 @@ namespace GlobalExpertise
 
             }
         }
-        private async void editBtn_Click(object sender, EventArgs e)
+        private async void EditBtn_Click(object sender, EventArgs e)
         {
             Employee employee = employeeBindingSource.Current as Employee;
             if (employee != null)
@@ -111,7 +105,7 @@ namespace GlobalExpertise
         }
 
 
-        private async void deleteBtn_Click(object sender, EventArgs e)
+        private async void DeleteBtn_Click(object sender, EventArgs e)
         {
             //Delete data from binding source, then save to sql database
             if (MessageBox.Show("Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -129,14 +123,35 @@ namespace GlobalExpertise
             }
         }
 
-        private void refreshBtn_Click(object sender, EventArgs e)
-        {
-
-            
+        private void RefreshBtn_Click(object sender, EventArgs e)
+        {        
             Cursor.Current = Cursors.WaitCursor;
             employeeBindingSource.DataSource = databaseContext.Employees.ToList();
             departementBindingSource.DataSource = databaseContext.Departements.ToList();
             Cursor.Current = Cursors.Default; 
+        }
+
+        private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e ) {
+            if (e.KeyChar == (char)13) {
+
+                employeeBindingSource.Filter = employeeDataGrid.Columns[3].HeaderText.ToString() + " LIKE '%" + searchTextBox.Text.Trim() + "" ;
+            employeeDataGrid.DataSource = employeeBindingSource;
+            }
+        }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+                        //filterSource.DataSource = employeeDataGrid.DataSource;
+        }
+
+//BindingSource filterSource = new BindingSource();
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            using(Login login = new Login())
+            {
+                this.Hide();
+                login.ShowDialog();
+            }
         }
     }
 }
