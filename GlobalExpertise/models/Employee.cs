@@ -1,11 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using GlobalExpertise.Utils;
 
 namespace GlobalExpertise.models
 {
-
-
-
-    public class Employee
+    public class Employee : EntityValidator
     {
         public int Id { get; set; }
 
@@ -18,7 +16,7 @@ namespace GlobalExpertise.models
         public string FirstName { get; set; }
 
         [Required]
-        [StringLength(150)]
+        [StringLength(150), EmailAddress]
         public string Email { get; set; }
 
         [Required]
@@ -27,11 +25,7 @@ namespace GlobalExpertise.models
 
         public int DepartementId { get; set; }
 
-
         public virtual Departement Departement { get; set; }
-
-
-
 
     }
 }

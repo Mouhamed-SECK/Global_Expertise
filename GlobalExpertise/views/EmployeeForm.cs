@@ -31,7 +31,6 @@ namespace GlobalExpertise.views
             using (EnterpriseContext db = new EnterpriseContext())
             {
                 departementComboBox.DataSource = db.Departements.ToList();
-
             }
         }
 
@@ -42,8 +41,11 @@ namespace GlobalExpertise.views
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            bindingSourceEmployee.EndEdit();
-            DialogResult = DialogResult.OK;
+            if(employee.IsValid)
+            {
+                bindingSourceEmployee.EndEdit();
+                DialogResult = DialogResult.OK;
+            }
         }
     }
 }
