@@ -1,49 +1,66 @@
 ﻿using System;
-
 using System.Windows.Forms;
+using GlobalExpertise.models;
+using GlobalExpertise.views;
 
 namespace GlobalExpertise
 {
     public partial class Dashbord : Form
     {
-        public Dashbord()
+       
+        Employee loggedEmployee;
+        public Dashbord(Employee loggedEmployee)
         {
+            this.loggedEmployee = loggedEmployee;        
             InitializeComponent();
         }
 
-        private void Guna2Button1_Click(object sender, EventArgs e)
+  
+
+        private void Dashbord_Load(object sender, EventArgs e)
         {
-            
+            this.GetViewConfiguration("CustomerCreation");
+            name.Text = loggedEmployee.Name;
+            departement.Text = loggedEmployee.Departement.Name;
         }
 
-        private void Guna2Button7_Click(object sender, EventArgs e)
+       
+        private void LogoutBtn_Click(object sender, EventArgs e)
         {
-
+            using(Login login = new Login())
+            {
+                this.Hide();
+                login.ShowDialog();
+            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Employees_Click(object sender, EventArgs e)
         {
-
+            panelContainer.Controls.Clear();
+            GetViewConfiguration("EmployeCreation");
+        }
+        private void Customers_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            GetViewConfiguration("CustomerCreation");
         }
 
-        private void label31_Click(object sender, EventArgs e)
-        {
+     
 
+        private void GetViewConfiguration(string viewName)
+        {
+            var viewToInstantiate = "GlobalExpertise.views." + viewName + ", GlobalExpertise";
+            var objectType = Type.GetType(viewToInstantiate);
+            Form view = (Form)Activator.CreateInstance(objectType);
+            view.FormBorderStyle = FormBorderStyle.None;
+            view.Dock = DockStyle.Fill;
+            view.TopLevel = false;
+            view.TopMost = true;
+            panelContainer.Controls.Add(view);
+            view.Show();
         }
 
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
     }
+    
 }

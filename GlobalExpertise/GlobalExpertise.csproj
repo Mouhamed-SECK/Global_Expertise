@@ -68,13 +68,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\EnterpriseContext.cs" />
+    <Compile Include="DAL\Initializer.cs" />
+    <Compile Include="Migrations\202101211502222_custumerEmployeeOrder.cs" />
+    <Compile Include="Migrations\202101211502222_custumerEmployeeOrder.designer.cs">
+      <DependentUpon>202101211502222_custumerEmployeeOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101212119376_orderProductCategory.cs" />
+    <Compile Include="Migrations\202101212119376_orderProductCategory.designer.cs">
+      <DependentUpon>202101212119376_orderProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101212121567_updateCategoryColName.cs" />
+    <Compile Include="Migrations\202101212121567_updateCategoryColName.designer.cs">
+      <DependentUpon>202101212121567_updateCategoryColName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101221959185_departement.cs" />
+    <Compile Include="Migrations\202101221959185_departement.designer.cs">
+      <DependentUpon>202101221959185_departement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101222112166_departementColUpdate.cs" />
+    <Compile Include="Migrations\202101222112166_departementColUpdate.designer.cs">
+      <DependentUpon>202101222112166_departementColUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="models\Category.cs" />
+    <Compile Include="models\Customer.cs" />
+    <Compile Include="models\Departement.cs" />
+    <Compile Include="models\Employee.cs" />
+    <Compile Include="models\Order.cs" />
+    <Compile Include="models\Product.cs" />
+    <Compile Include="models\PurchaseOrder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\Users.cs" />
+    <Compile Include="Utils\EntityValidator.cs" />
+    <Compile Include="views\CustomerCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CustomerCreation.Designer.cs">
+      <DependentUpon>CustomerCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Dashbord.designer.cs">
       <DependentUpon>Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\EmployeCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\EmployeCreation.Designer.cs">
+      <DependentUpon>EmployeCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\SplashScreen.cs">
       <SubType>Form</SubType>
@@ -94,6 +150,21 @@
     <Compile Include="views\Purchase.Designer.cs">
       <DependentUpon>Purchase.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Migrations\202101211502222_custumerEmployeeOrder.resx">
+      <DependentUpon>202101211502222_custumerEmployeeOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101212119376_orderProductCategory.resx">
+      <DependentUpon>202101212119376_orderProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101212121567_updateCategoryColName.resx">
+      <DependentUpon>202101212121567_updateCategoryColName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101221959185_departement.resx">
+      <DependentUpon>202101221959185_departement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101222112166_departementColUpdate.resx">
+      <DependentUpon>202101222112166_departementColUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -104,8 +175,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="views\CustomerCreation.resx">
+      <DependentUpon>CustomerCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Dashbord.resx">
       <DependentUpon>Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\EmployeCreation.resx">
+      <DependentUpon>EmployeCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
@@ -117,6 +200,9 @@
       <DependentUpon>Purchase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Customer.datasource" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Departement.datasource" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Employee.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,10 +216,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="models\" />
-    <Folder Include="services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\2307372.png" />
     <Content Include="Resources\4094476.png" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GlobalExpertise.views;
+using System;
 
 using System.Windows.Forms;
 
@@ -14,7 +15,7 @@ namespace GlobalExpertise
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashbord());
+            Application.Run(new Login());
         }
     }
 }
