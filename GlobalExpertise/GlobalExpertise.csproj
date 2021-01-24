@@ -102,11 +102,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\Users.cs" />
     <Compile Include="Utils\EntityValidator.cs" />
+    <Compile Include="views\CustomerCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CustomerCreation.Designer.cs">
+      <DependentUpon>CustomerCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Dashbord.designer.cs">
       <DependentUpon>Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\EmployeCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\EmployeCreation.Designer.cs">
+      <DependentUpon>EmployeCreation.cs</DependentUpon>
     </Compile>
     <Compile Include="views\EmployeeForm.cs">
       <SubType>Form</SubType>
@@ -157,8 +175,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="views\CustomerCreation.resx">
+      <DependentUpon>CustomerCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Dashbord.resx">
       <DependentUpon>Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\EmployeCreation.resx">
+      <DependentUpon>EmployeCreation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
@@ -173,6 +200,7 @@
       <DependentUpon>Purchase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Customer.datasource" />
     <None Include="Properties\DataSources\GlobalExpertise.models.Departement.datasource" />
     <None Include="Properties\DataSources\GlobalExpertise.models.Employee.datasource" />
     <None Include="Properties\Settings.settings">

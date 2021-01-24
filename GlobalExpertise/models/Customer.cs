@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using GlobalExpertise.Utils;
 
 namespace GlobalExpertise.models
 {
-    public class Customer 
+    public class Customer : EntityValidator
     {
         
         public int Id { get; set; }
