@@ -33,44 +33,24 @@ namespace GlobalExpertise.views
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.refreshBtn = new Guna.UI2.WinForms.Guna2Button();
             this.addBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.deleteBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.editBtn = new Guna.UI2.WinForms.Guna2Button();
             this.employeeDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DepartementId = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.saveBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartementId = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.departementBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.RefreshBtn = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.DeleteBtn = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.SaveBtn = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.EditBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departementBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // refreshBtn
-            // 
-            this.refreshBtn.Animated = true;
-            this.refreshBtn.BackColor = System.Drawing.Color.Transparent;
-            this.refreshBtn.BorderRadius = 6;
-            this.refreshBtn.CheckedState.Parent = this.refreshBtn;
-            this.refreshBtn.CustomImages.Parent = this.refreshBtn;
-            this.refreshBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(80)))), ((int)(((byte)(157)))));
-            this.refreshBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.refreshBtn.ForeColor = System.Drawing.Color.White;
-            this.refreshBtn.HoverState.Parent = this.refreshBtn;
-            this.refreshBtn.Location = new System.Drawing.Point(600, 19);
-            this.refreshBtn.Name = "refreshBtn";
-            this.refreshBtn.ShadowDecoration.Parent = this.refreshBtn;
-            this.refreshBtn.Size = new System.Drawing.Size(138, 34);
-            this.refreshBtn.TabIndex = 31;
-            this.refreshBtn.Text = "Sauvegarder";
-            this.refreshBtn.UseTransparentBackground = true;
-            this.refreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
             // 
             // addBtn
             // 
@@ -91,46 +71,6 @@ namespace GlobalExpertise.views
             this.addBtn.Text = "Ajouter";
             this.addBtn.UseTransparentBackground = true;
             this.addBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // deleteBtn
-            // 
-            this.deleteBtn.Animated = true;
-            this.deleteBtn.BackColor = System.Drawing.Color.Transparent;
-            this.deleteBtn.BorderRadius = 6;
-            this.deleteBtn.CheckedState.Parent = this.deleteBtn;
-            this.deleteBtn.CustomImages.Parent = this.deleteBtn;
-            this.deleteBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.deleteBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.deleteBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteBtn.HoverState.Parent = this.deleteBtn;
-            this.deleteBtn.Location = new System.Drawing.Point(290, 19);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.ShadowDecoration.Parent = this.deleteBtn;
-            this.deleteBtn.Size = new System.Drawing.Size(123, 34);
-            this.deleteBtn.TabIndex = 29;
-            this.deleteBtn.Text = "Supprimer";
-            this.deleteBtn.UseTransparentBackground = true;
-            this.deleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
-            // 
-            // editBtn
-            // 
-            this.editBtn.Animated = true;
-            this.editBtn.BackColor = System.Drawing.Color.Transparent;
-            this.editBtn.BorderRadius = 6;
-            this.editBtn.CheckedState.Parent = this.editBtn;
-            this.editBtn.CustomImages.Parent = this.editBtn;
-            this.editBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(80)))), ((int)(((byte)(157)))));
-            this.editBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.editBtn.ForeColor = System.Drawing.Color.White;
-            this.editBtn.HoverState.Parent = this.editBtn;
-            this.editBtn.Location = new System.Drawing.Point(160, 19);
-            this.editBtn.Name = "editBtn";
-            this.editBtn.ShadowDecoration.Parent = this.editBtn;
-            this.editBtn.Size = new System.Drawing.Size(124, 34);
-            this.editBtn.TabIndex = 28;
-            this.editBtn.Text = "Modifier";
-            this.editBtn.UseTransparentBackground = true;
-            this.editBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // employeeDataGrid
             // 
@@ -206,6 +146,27 @@ namespace GlobalExpertise.views
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
             // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
             // DepartementId
             // 
             this.DepartementId.DataPropertyName = "DepartementId";
@@ -216,25 +177,13 @@ namespace GlobalExpertise.views
             this.DepartementId.Name = "DepartementId";
             this.DepartementId.ValueMember = "departementId";
             // 
-            // saveBtn
+            // departementBindingSource
             // 
-            this.saveBtn.Animated = true;
-            this.saveBtn.BackColor = System.Drawing.Color.Transparent;
-            this.saveBtn.BorderRadius = 6;
-            this.saveBtn.CheckedState.Parent = this.saveBtn;
-            this.saveBtn.CustomImages.Parent = this.saveBtn;
-            this.saveBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(80)))), ((int)(((byte)(157)))));
-            this.saveBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.saveBtn.ForeColor = System.Drawing.Color.White;
-            this.saveBtn.HoverState.Parent = this.saveBtn;
-            this.saveBtn.Location = new System.Drawing.Point(419, 19);
-            this.saveBtn.Name = "saveBtn";
-            this.saveBtn.ShadowDecoration.Parent = this.saveBtn;
-            this.saveBtn.Size = new System.Drawing.Size(143, 34);
-            this.saveBtn.TabIndex = 26;
-            this.saveBtn.Text = "Sauvegarder";
-            this.saveBtn.UseTransparentBackground = true;
-            this.saveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
+            this.departementBindingSource.DataSource = typeof(GlobalExpertise.models.Departement);
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(GlobalExpertise.models.Employee);
             // 
             // searchTextBox
             // 
@@ -262,34 +211,81 @@ namespace GlobalExpertise.views
             this.searchTextBox.Size = new System.Drawing.Size(249, 36);
             this.searchTextBox.TabIndex = 25;
             // 
-            // nameDataGridViewTextBoxColumn
+            // RefreshBtn
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.RefreshBtn.BackColor = System.Drawing.Color.Transparent;
+            this.RefreshBtn.CheckedState.Parent = this.RefreshBtn;
+            this.RefreshBtn.CustomImages.Parent = this.RefreshBtn;
+            this.RefreshBtn.FillColor = System.Drawing.Color.Transparent;
+            this.RefreshBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RefreshBtn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.RefreshBtn.HoverState.Parent = this.RefreshBtn;
+            this.RefreshBtn.Image = global::GlobalExpertise.Properties.Resources.refresh;
+            this.RefreshBtn.Location = new System.Drawing.Point(398, 14);
+            this.RefreshBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.RefreshBtn.Name = "RefreshBtn";
+            this.RefreshBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.RefreshBtn.ShadowDecoration.Parent = this.RefreshBtn;
+            this.RefreshBtn.Size = new System.Drawing.Size(61, 51);
+            this.RefreshBtn.TabIndex = 44;
+            this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
             // 
-            // firstNameDataGridViewTextBoxColumn
+            // DeleteBtn
             // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.DeleteBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DeleteBtn.CheckedState.Parent = this.DeleteBtn;
+            this.DeleteBtn.CustomImages.Parent = this.DeleteBtn;
+            this.DeleteBtn.FillColor = System.Drawing.Color.Transparent;
+            this.DeleteBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DeleteBtn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.DeleteBtn.HoverState.Parent = this.DeleteBtn;
+            this.DeleteBtn.Image = global::GlobalExpertise.Properties.Resources.supprimer_l_option_de_symbole;
+            this.DeleteBtn.Location = new System.Drawing.Point(341, 13);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.DeleteBtn.ShadowDecoration.Parent = this.DeleteBtn;
+            this.DeleteBtn.Size = new System.Drawing.Size(59, 52);
+            this.DeleteBtn.TabIndex = 43;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
-            // emailDataGridViewTextBoxColumn
+            // SaveBtn
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.SaveBtn.BackColor = System.Drawing.Color.Transparent;
+            this.SaveBtn.CheckedState.Parent = this.SaveBtn;
+            this.SaveBtn.CustomImages.Parent = this.SaveBtn;
+            this.SaveBtn.FillColor = System.Drawing.Color.Transparent;
+            this.SaveBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.SaveBtn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.SaveBtn.HoverState.Parent = this.SaveBtn;
+            this.SaveBtn.Image = global::GlobalExpertise.Properties.Resources.symbole_d_interface_de_sauvegarde_sur_disquette__2_;
+            this.SaveBtn.Location = new System.Drawing.Point(267, 13);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.SaveBtn.ShadowDecoration.Parent = this.SaveBtn;
+            this.SaveBtn.Size = new System.Drawing.Size(57, 51);
+            this.SaveBtn.TabIndex = 42;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // departementBindingSource
+            // EditBtn
             // 
-            this.departementBindingSource.DataSource = typeof(GlobalExpertise.models.Departement);
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(GlobalExpertise.models.Employee);
+            this.EditBtn.BackColor = System.Drawing.Color.Transparent;
+            this.EditBtn.CheckedState.Parent = this.EditBtn;
+            this.EditBtn.CustomImages.Parent = this.EditBtn;
+            this.EditBtn.FillColor = System.Drawing.Color.Transparent;
+            this.EditBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.EditBtn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.EditBtn.HoverState.Parent = this.EditBtn;
+            this.EditBtn.Image = global::GlobalExpertise.Properties.Resources.modifier_le_fichier1;
+            this.EditBtn.Location = new System.Drawing.Point(195, 13);
+            this.EditBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.EditBtn.ShadowDecoration.Parent = this.EditBtn;
+            this.EditBtn.Size = new System.Drawing.Size(64, 52);
+            this.EditBtn.TabIndex = 41;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // EmployeCreation
             // 
@@ -297,12 +293,12 @@ namespace GlobalExpertise.views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1172, 749);
-            this.Controls.Add(this.refreshBtn);
+            this.Controls.Add(this.RefreshBtn);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.SaveBtn);
+            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.addBtn);
-            this.Controls.Add(this.deleteBtn);
-            this.Controls.Add(this.editBtn);
             this.Controls.Add(this.employeeDataGrid);
-            this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.searchTextBox);
             this.Name = "EmployeCreation";
             this.Text = "EmployeCreation";
@@ -315,13 +311,8 @@ namespace GlobalExpertise.views
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Button refreshBtn;
         private Guna.UI2.WinForms.Guna2Button addBtn;
-        private Guna.UI2.WinForms.Guna2Button deleteBtn;
-        private Guna.UI2.WinForms.Guna2Button editBtn;
         private Guna.UI2.WinForms.Guna2DataGridView employeeDataGrid;
-        private Guna.UI2.WinForms.Guna2Button saveBtn;
         private Guna.UI2.WinForms.Guna2TextBox searchTextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
@@ -330,5 +321,9 @@ namespace GlobalExpertise.views
         private System.Windows.Forms.DataGridViewComboBoxColumn DepartementId;
         private System.Windows.Forms.BindingSource departementBindingSource;
         private System.Windows.Forms.BindingSource employeeBindingSource;
+        private Guna.UI2.WinForms.Guna2CircleButton RefreshBtn;
+        private Guna.UI2.WinForms.Guna2CircleButton DeleteBtn;
+        private Guna.UI2.WinForms.Guna2CircleButton SaveBtn;
+        private Guna.UI2.WinForms.Guna2CircleButton EditBtn;
     }
 }

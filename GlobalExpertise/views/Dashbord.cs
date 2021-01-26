@@ -19,7 +19,7 @@ namespace GlobalExpertise
 
         private void Dashbord_Load(object sender, EventArgs e)
         {
-            this.GetViewConfiguration("CustomerCreation");
+            this.GetViewConfiguration("EmployeCreation");
             name.Text = loggedEmployee.Name;
             departement.Text = loggedEmployee.Departement.Name;
         }
@@ -60,7 +60,11 @@ namespace GlobalExpertise
             view.Show();
         }
 
-      
+        private void products_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            GetViewConfiguration("ProductCreation");
+        }
     }
     
 }

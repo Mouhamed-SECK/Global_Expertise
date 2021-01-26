@@ -273,6 +273,26 @@ namespace GlobalExpertise.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modifier_le_fichier {
+            get {
+                object obj = ResourceManager.GetObject("modifier-le-fichier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modifier_le_fichier1 {
+            get {
+                object obj = ResourceManager.GetObject("modifier-le-fichier1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Path_335 {
             get {
                 object obj = ResourceManager.GetObject("Path_335", resourceCulture);
@@ -343,6 +363,16 @@ namespace GlobalExpertise.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap refresh {
+            get {
+                object obj = ResourceManager.GetObject("refresh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_100px {
             get {
                 object obj = ResourceManager.GetObject("search_100px", resourceCulture);
@@ -376,6 +406,36 @@ namespace GlobalExpertise.Properties {
         internal static System.Drawing.Bitmap Splash {
             get {
                 object obj = ResourceManager.GetObject("Splash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap supprimer_l_option_de_symbole {
+            get {
+                object obj = ResourceManager.GetObject("supprimer-l\'option-de-symbole", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap symbole_d_interface_de_sauvegarde_sur_disquette {
+            get {
+                object obj = ResourceManager.GetObject("symbole-d\'interface-de-sauvegarde-sur-disquette", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap symbole_d_interface_de_sauvegarde_sur_disquette__2_ {
+            get {
+                object obj = ResourceManager.GetObject("symbole-d\'interface-de-sauvegarde-sur-disquette (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashbord));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.departement = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
@@ -37,11 +36,9 @@
             this.products = new Guna.UI2.WinForms.Guna2Button();
             this.customers = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelContainer = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -53,13 +50,12 @@
             this.guna2Panel1.Controls.Add(this.products);
             this.guna2Panel1.Controls.Add(this.customers);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(80)))), ((int)(((byte)(157)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(228, 743);
+            this.guna2Panel1.Size = new System.Drawing.Size(228, 774);
             this.guna2Panel1.TabIndex = 0;
             // 
             // departement
@@ -167,6 +163,7 @@
             this.products.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.products.TextOffset = new System.Drawing.Point(40, 0);
             this.products.UseTransparentBackground = true;
+            this.products.Click += new System.EventHandler(this.products_Click);
             // 
             // customers
             // 
@@ -196,7 +193,8 @@
             this.customers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.customers.TextOffset = new System.Drawing.Point(40, 0);
             this.customers.UseTransparentBackground = true;
-            this.customers.Click += new System.EventHandler(this.Customers_Click);        // 
+            this.customers.Click += new System.EventHandler(this.Customers_Click);
+            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -210,25 +208,12 @@
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(30, 23);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(154, 44);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
             // panelContainer
             // 
-            this.panelContainer.Location = new System.Drawing.Point(273, 148);
+            this.panelContainer.Location = new System.Drawing.Point(273, 54);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.ShadowDecoration.Parent = this.panelContainer;
-            this.panelContainer.Size = new System.Drawing.Size(955, 568);
+            this.panelContainer.Size = new System.Drawing.Size(951, 689);
             this.panelContainer.TabIndex = 1;
             // 
             // Dashbord
@@ -236,7 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1272, 743);
+            this.ClientSize = new System.Drawing.Size(1243, 774);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -247,7 +232,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,7 +240,6 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button logoutBtn;
         private Guna.UI2.WinForms.Guna2Button employees;
         private Guna.UI2.WinForms.Guna2Button products;

@@ -33,5 +33,10 @@ namespace GlobalExpertise.views
                 DialogResult = DialogResult.OK;
             }
         }
+
+        private void CustomerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

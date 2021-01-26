@@ -90,6 +90,14 @@
     <Compile Include="Migrations\202101222112166_departementColUpdate.designer.cs">
       <DependentUpon>202101222112166_departementColUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101251131164_productModelUpdate.cs" />
+    <Compile Include="Migrations\202101251131164_productModelUpdate.designer.cs">
+      <DependentUpon>202101251131164_productModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101251307167_update.cs" />
+    <Compile Include="Migrations\202101251307167_update.designer.cs">
+      <DependentUpon>202101251307167_update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="models\Category.cs" />
     <Compile Include="models\Customer.cs" />
@@ -102,16 +110,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\Users.cs" />
     <Compile Include="Utils\EntityValidator.cs" />
-    <Compile Include="views\CustomerCreation.cs">
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="views\users\CustomerCreation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\CustomerCreation.Designer.cs">
+    <Compile Include="views\users\CustomerCreation.Designer.cs">
       <DependentUpon>CustomerCreation.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\CustomerForm.cs">
+    <Compile Include="views\users\CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\CustomerForm.Designer.cs">
+    <Compile Include="views\users\CustomerForm.Designer.cs">
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Dashbord.cs">
@@ -120,17 +129,29 @@
     <Compile Include="views\Dashbord.designer.cs">
       <DependentUpon>Dashbord.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\EmployeCreation.cs">
+    <Compile Include="views\users\EmployeCreation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\EmployeCreation.Designer.cs">
+    <Compile Include="views\users\EmployeCreation.Designer.cs">
       <DependentUpon>EmployeCreation.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\EmployeeForm.cs">
+    <Compile Include="views\users\EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\EmployeeForm.Designer.cs">
+    <Compile Include="views\users\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\products\ProductCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\products\ProductCreation.Designer.cs">
+      <DependentUpon>ProductCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\products\ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\products\ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\SplashScreen.cs">
       <SubType>Form</SubType>
@@ -165,6 +186,12 @@
     <EmbeddedResource Include="Migrations\202101222112166_departementColUpdate.resx">
       <DependentUpon>202101222112166_departementColUpdate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101251131164_productModelUpdate.resx">
+      <DependentUpon>202101251131164_productModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101251307167_update.resx">
+      <DependentUpon>202101251307167_update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -175,20 +202,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="views\CustomerCreation.resx">
+    <EmbeddedResource Include="views\users\CustomerCreation.resx">
       <DependentUpon>CustomerCreation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\CustomerForm.resx">
+    <EmbeddedResource Include="views\users\CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Dashbord.resx">
       <DependentUpon>Dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\EmployeCreation.resx">
+    <EmbeddedResource Include="views\users\EmployeCreation.resx">
       <DependentUpon>EmployeCreation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\EmployeeForm.resx">
+    <EmbeddedResource Include="views\users\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\products\ProductCreation.resx">
+      <DependentUpon>ProductCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\products\ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
@@ -200,9 +233,11 @@
       <DependentUpon>Purchase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Category.datasource" />
     <None Include="Properties\DataSources\GlobalExpertise.models.Customer.datasource" />
     <None Include="Properties\DataSources\GlobalExpertise.models.Departement.datasource" />
     <None Include="Properties\DataSources\GlobalExpertise.models.Employee.datasource" />
+    <None Include="Properties\DataSources\GlobalExpertise.models.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -240,6 +275,9 @@
     <Content Include="Resources\Group 99.png" />
     <Content Include="Resources\logoprojectam.png" />
     <None Include="Resources\splash.bmp" />
+    <None Include="Resources\modifier-le-fichier.png" />
+    <None Include="Resources\modifier-le-fichier1.png" />
+    <None Include="Resources\refresh.png" />
     <Content Include="Resources\Splash.png" />
     <Content Include="Resources\Path 335.png" />
     <Content Include="Resources\Path 336.png" />
@@ -252,6 +290,9 @@
     <Content Include="Resources\search_100px.png" />
     <Content Include="Resources\speed_100px.png" />
     <Content Include="Resources\speed_100px.png1.png" />
+    <None Include="Resources\symbole-d%27interface-de-sauvegarde-sur-disquette.png" />
+    <None Include="Resources\symbole-d%27interface-de-sauvegarde-sur-disquette %282%29.png" />
+    <None Include="Resources\supprimer-l%27option-de-symbole.png" />
     <Content Include="Resources\task_100px.png" />
     <Content Include="Resources\task_100px.png1.png" />
     <Content Include="Resources\training_100px.png" />

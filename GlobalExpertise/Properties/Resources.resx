@@ -118,110 +118,50 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="about_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\about_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="about_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\about_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="communicate_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\communicate_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="communicate_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\communicate_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 117.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 118.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 119.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logoprojectam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoprojectam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Path_335" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Path 335.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Path_336" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Path 336.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo_1485875437342_9b39470b3d95" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1485875437342-9b39470b3d95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo_1494354145959_25cb82edf23d___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1494354145959-25cb82edf23d - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo_1494790108377_be9c29b29330___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1494790108377-be9c29b29330 - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo_1503443207922_dff7d543fd0e" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1503443207922-dff7d543fd0e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo_1507003211169_0a1dd7228f2d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1507003211169-0a1dd7228f2d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="speed_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speed_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="speed_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speed_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="task_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\task_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="task_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\task_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="training_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\training_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="training_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\training_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trophy_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trophy_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trophy_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trophy_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="photo_1503443207922_dff7d543fd0e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1503443207922-dff7d543fd0e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 117.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo_1494354145959_25cb82edf23d___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1494354145959-25cb82edf23d - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="symbole-d'interface-de-sauvegarde-sur-disquette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\symbole-d'interface-de-sauvegarde-sur-disquette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supprimer-l'option-de-symbole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supprimer-l'option-de-symbole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_2307372" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2307372.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo_1485875437342_9b39470b3d95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1485875437342-9b39470b3d95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="training_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\training_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="modifier-le-fichier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modifier-le-fichier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="speed_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speed_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_4094476" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4094476.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,7 +169,85 @@
   <data name="_4202489" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4202489.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="symbole-d'interface-de-sauvegarde-sur-disquette (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\symbole-d'interface-de-sauvegarde-sur-disquette (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trophy_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trophy_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="communicate_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\communicate_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_4441005" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4441005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Path_336" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Path 336.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 118.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoprojectam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoprojectam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="task_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\task_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo_1494790108377_be9c29b29330___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1494790108377-be9c29b29330 - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo_1507003211169_0a1dd7228f2d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1507003211169-0a1dd7228f2d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 119.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="modifier-le-fichier1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modifier-le-fichier1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="task_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\task_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="speed_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speed_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Path_335" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Path 335.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="training_100px_png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\training_100px.png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

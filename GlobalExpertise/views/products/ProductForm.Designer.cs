@@ -1,7 +1,7 @@
 ﻿
 namespace GlobalExpertise.views
 {
-    partial class EmployeeForm
+    partial class ProductForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,45 @@ namespace GlobalExpertise.views
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
+            this.productComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.saveBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.departementComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ChooseBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.nameText = new Guna.UI2.WinForms.Guna2TextBox();
             this.firstNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.bindingSourceEmployee = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // productComboBox
+            // 
+            this.productComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.productComboBox.BorderRadius = 8;
+            this.productComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productBindingSource, "CategoryId", true));
+            this.productComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.productComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.productComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.productComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.productComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.productComboBox.FocusedState.Parent = this.productComboBox;
+            this.productComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.productComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.productComboBox.HoverState.Parent = this.productComboBox;
+            this.productComboBox.ItemHeight = 30;
+            this.productComboBox.ItemsAppearance.Parent = this.productComboBox;
+            this.productComboBox.Location = new System.Drawing.Point(109, 443);
+            this.productComboBox.Name = "productComboBox";
+            this.productComboBox.ShadowDecoration.Parent = this.productComboBox;
+            this.productComboBox.Size = new System.Drawing.Size(355, 36);
+            this.productComboBox.TabIndex = 30;
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(GlobalExpertise.models.Product);
             // 
             // saveBtn
             // 
@@ -53,43 +81,55 @@ namespace GlobalExpertise.views
             this.saveBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.saveBtn.ForeColor = System.Drawing.Color.White;
             this.saveBtn.HoverState.Parent = this.saveBtn;
-            this.saveBtn.Location = new System.Drawing.Point(283, 389);
+            this.saveBtn.Location = new System.Drawing.Point(312, 498);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.ShadowDecoration.Parent = this.saveBtn;
             this.saveBtn.Size = new System.Drawing.Size(152, 36);
-            this.saveBtn.TabIndex = 9;
+            this.saveBtn.TabIndex = 26;
             this.saveBtn.Text = "Sauvegarder";
             this.saveBtn.UseTransparentBackground = true;
             this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
-            // departementComboBox
+            // ChooseBtn
             // 
-            this.departementComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.departementComboBox.BorderRadius = 8;
-            this.departementComboBox.DisplayMember = "departementId";
-            this.departementComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.departementComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.departementComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.departementComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.departementComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.departementComboBox.FocusedState.Parent = this.departementComboBox;
-            this.departementComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.departementComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.departementComboBox.HoverState.Parent = this.departementComboBox;
-            this.departementComboBox.ItemHeight = 30;
-            this.departementComboBox.ItemsAppearance.Parent = this.departementComboBox;
-            this.departementComboBox.Location = new System.Drawing.Point(80, 319);
-            this.departementComboBox.Name = "departementComboBox";
-            this.departementComboBox.ShadowDecoration.Parent = this.departementComboBox;
-            this.departementComboBox.Size = new System.Drawing.Size(355, 36);
-            this.departementComboBox.TabIndex = 25;
-            this.departementComboBox.ValueMember = "departementId";
+            this.ChooseBtn.Animated = true;
+            this.ChooseBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ChooseBtn.BorderRadius = 6;
+            this.ChooseBtn.CheckedState.Parent = this.ChooseBtn;
+            this.ChooseBtn.CustomImages.Parent = this.ChooseBtn;
+            this.ChooseBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(80)))), ((int)(((byte)(157)))));
+            this.ChooseBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.ChooseBtn.ForeColor = System.Drawing.Color.White;
+            this.ChooseBtn.HoverState.Parent = this.ChooseBtn;
+            this.ChooseBtn.Location = new System.Drawing.Point(202, 183);
+            this.ChooseBtn.Name = "ChooseBtn";
+            this.ChooseBtn.ShadowDecoration.Parent = this.ChooseBtn;
+            this.ChooseBtn.Size = new System.Drawing.Size(188, 36);
+            this.ChooseBtn.TabIndex = 32;
+            this.ChooseBtn.Text = "Chosir une image";
+            this.ChooseBtn.UseTransparentBackground = true;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            this.errorProvider.DataSource = this.productBindingSource;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(190, 12);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(183, 143);
+            this.guna2CirclePictureBox1.TabIndex = 31;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // nameText
             // 
             this.nameText.Animated = true;
             this.nameText.BorderRadius = 8;
             this.nameText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nameText.DataBindings.Add(new System.Windows.Forms.Binding("DefaultText", this.productBindingSource, "Name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nameText.DefaultText = "";
             this.nameText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.nameText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -102,23 +142,23 @@ namespace GlobalExpertise.views
             this.nameText.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nameText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameText.HoverState.Parent = this.nameText;
-            this.nameText.IconLeft = ((System.Drawing.Image)(resources.GetObject("nameText.IconLeft")));
-            this.nameText.Location = new System.Drawing.Point(80, 87);
+            this.nameText.Location = new System.Drawing.Point(109, 243);
             this.nameText.Margin = new System.Windows.Forms.Padding(4);
             this.nameText.Name = "nameText";
             this.nameText.PasswordChar = '\0';
             this.nameText.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.nameText.PlaceholderText = "Nom";
+            this.nameText.PlaceholderText = "Libelle";
             this.nameText.SelectedText = "";
             this.nameText.ShadowDecoration.Parent = this.nameText;
             this.nameText.Size = new System.Drawing.Size(355, 44);
-            this.nameText.TabIndex = 22;
+            this.nameText.TabIndex = 27;
             // 
             // firstNameTextBox
             // 
             this.firstNameTextBox.Animated = true;
             this.firstNameTextBox.BorderRadius = 8;
             this.firstNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("DefaultText", this.productBindingSource, "Price", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "C2"));
             this.firstNameTextBox.DefaultText = "";
             this.firstNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.firstNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -131,23 +171,23 @@ namespace GlobalExpertise.views
             this.firstNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.firstNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextBox.HoverState.Parent = this.firstNameTextBox;
-            this.firstNameTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("firstNameTextBox.IconLeft")));
-            this.firstNameTextBox.Location = new System.Drawing.Point(80, 167);
+            this.firstNameTextBox.Location = new System.Drawing.Point(109, 307);
             this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.PasswordChar = '\0';
             this.firstNameTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.firstNameTextBox.PlaceholderText = "Prenom";
+            this.firstNameTextBox.PlaceholderText = "Prix";
             this.firstNameTextBox.SelectedText = "";
             this.firstNameTextBox.ShadowDecoration.Parent = this.firstNameTextBox;
             this.firstNameTextBox.Size = new System.Drawing.Size(355, 44);
-            this.firstNameTextBox.TabIndex = 23;
+            this.firstNameTextBox.TabIndex = 28;
             // 
             // emailTextBox
             // 
             this.emailTextBox.Animated = true;
             this.emailTextBox.BorderRadius = 8;
             this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("DefaultText", this.productBindingSource, "Quantity", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "N2"));
             this.emailTextBox.DefaultText = "";
             this.emailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.emailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -160,54 +200,50 @@ namespace GlobalExpertise.views
             this.emailTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextBox.HoverState.Parent = this.emailTextBox;
-            this.emailTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("emailTextBox.IconLeft")));
-            this.emailTextBox.Location = new System.Drawing.Point(80, 248);
+            this.emailTextBox.Location = new System.Drawing.Point(109, 379);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.PasswordChar = '\0';
             this.emailTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.emailTextBox.PlaceholderText = "Email";
+            this.emailTextBox.PlaceholderText = "Quantité";
             this.emailTextBox.SelectedText = "";
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
             this.emailTextBox.Size = new System.Drawing.Size(355, 44);
-            this.emailTextBox.TabIndex = 24;
+            this.emailTextBox.TabIndex = 29;
             // 
-            // errorProvider
-            // 
-            this.errorProvider.ContainerControl = this;
-            this.errorProvider.DataSource = this.bindingSourceEmployee;
-            // 
-            // bindingSourceEmployee
-            // 
-            this.bindingSourceEmployee.DataSource = typeof(GlobalExpertise.models.Employee);
-            // 
-            // EmployeeForm
+            // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(505, 473);
-            this.Controls.Add(this.departementComboBox);
+            this.ClientSize = new System.Drawing.Size(564, 564);
+            this.Controls.Add(this.ChooseBtn);
+            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.productComboBox);
             this.Controls.Add(this.nameText);
             this.Controls.Add(this.firstNameTextBox);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.saveBtn);
-            this.Name = "EmployeeForm";
-            this.Text = "Création d\'un Employé";
-            this.Load += new System.EventHandler(this.EmployeeForm_Load);
+            this.Name = "ProductForm";
+            this.Text = "ProductForm";
+            this.Load += new System.EventHandler(this.ProductForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button saveBtn;
-        private Guna.UI2.WinForms.Guna2ComboBox departementComboBox;
+
+        private Guna.UI2.WinForms.Guna2ComboBox productComboBox;
         private Guna.UI2.WinForms.Guna2TextBox nameText;
         private Guna.UI2.WinForms.Guna2TextBox firstNameTextBox;
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
+        private Guna.UI2.WinForms.Guna2Button saveBtn;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2Button ChooseBtn;
+        private System.Windows.Forms.BindingSource productBindingSource;
         private System.Windows.Forms.ErrorProvider errorProvider;
-        private System.Windows.Forms.BindingSource bindingSourceEmployee;
     }
 }
