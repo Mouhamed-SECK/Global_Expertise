@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Drawing;
+using System.IO;
 using GlobalExpertise.Utils;
 namespace GlobalExpertise.models
 {
@@ -25,9 +28,46 @@ namespace GlobalExpertise.models
         
         public int CategoryId  { get; set; }
 
+        [Required]
+        public byte[] ProductImage { get; set; }
+
         public virtual Category Category { get; set; }
 
         public virtual ICollection<PurchaseOrder> PurchaseOrders { get; set; }
+
+
+     /*   [NotMapped]
+        public Image  ConvertedImage 
+        {
+            set
+            {
+                 ByteArrayToImage(this.ProductImage);
+            }
+            get
+            {
+                return ConvertedImage;
+            }
+        } */
+    
+
+    public byte[] ImageToByteArray(System.Drawing.Image imageIn)
+        {
+            using (var ms = new MemoryStream())
+            {
+                imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
+
+                return ms.ToArray();
+            }
+        }
+
+        public Image ByteArrayToImage(byte[] byteArrayIn)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArrayIn))
+            {
+
+                return Image.FromStream(ms);
+            }
+        }
 
 
 

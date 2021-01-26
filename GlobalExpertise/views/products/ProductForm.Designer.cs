@@ -31,17 +31,17 @@ namespace GlobalExpertise.views
         {
             this.components = new System.ComponentModel.Container();
             this.productComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.saveBtn = new Guna.UI2.WinForms.Guna2Button();
             this.ChooseBtn = new Guna.UI2.WinForms.Guna2Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.nameText = new Guna.UI2.WinForms.Guna2TextBox();
             this.firstNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            this.productPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // productComboBox
@@ -65,10 +65,6 @@ namespace GlobalExpertise.views
             this.productComboBox.ShadowDecoration.Parent = this.productComboBox;
             this.productComboBox.Size = new System.Drawing.Size(355, 36);
             this.productComboBox.TabIndex = 30;
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(GlobalExpertise.models.Product);
             // 
             // saveBtn
             // 
@@ -101,28 +97,19 @@ namespace GlobalExpertise.views
             this.ChooseBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.ChooseBtn.ForeColor = System.Drawing.Color.White;
             this.ChooseBtn.HoverState.Parent = this.ChooseBtn;
-            this.ChooseBtn.Location = new System.Drawing.Point(202, 183);
+            this.ChooseBtn.Location = new System.Drawing.Point(191, 183);
             this.ChooseBtn.Name = "ChooseBtn";
             this.ChooseBtn.ShadowDecoration.Parent = this.ChooseBtn;
             this.ChooseBtn.Size = new System.Drawing.Size(188, 36);
             this.ChooseBtn.TabIndex = 32;
             this.ChooseBtn.Text = "Chosir une image";
             this.ChooseBtn.UseTransparentBackground = true;
+            this.ChooseBtn.Click += new System.EventHandler(this.ChooseBtn_Click);
             // 
             // errorProvider
             // 
             this.errorProvider.ContainerControl = this;
             this.errorProvider.DataSource = this.productBindingSource;
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(190, 12);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(183, 143);
-            this.guna2CirclePictureBox1.TabIndex = 31;
-            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // nameText
             // 
@@ -211,14 +198,28 @@ namespace GlobalExpertise.views
             this.emailTextBox.Size = new System.Drawing.Size(355, 44);
             this.emailTextBox.TabIndex = 29;
             // 
+            // productPictureBox
+            // 
+            this.productPictureBox.Location = new System.Drawing.Point(168, 24);
+            this.productPictureBox.Name = "productPictureBox";
+            this.productPictureBox.ShadowDecoration.Parent = this.productPictureBox;
+            this.productPictureBox.Size = new System.Drawing.Size(258, 153);
+            this.productPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.productPictureBox.TabIndex = 33;
+            this.productPictureBox.TabStop = false;
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(GlobalExpertise.models.Product);
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(564, 564);
+            this.Controls.Add(this.productPictureBox);
             this.Controls.Add(this.ChooseBtn);
-            this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.productComboBox);
             this.Controls.Add(this.nameText);
             this.Controls.Add(this.firstNameTextBox);
@@ -227,9 +228,9 @@ namespace GlobalExpertise.views
             this.Name = "ProductForm";
             this.Text = "ProductForm";
             this.Load += new System.EventHandler(this.ProductForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -241,9 +242,9 @@ namespace GlobalExpertise.views
         private Guna.UI2.WinForms.Guna2TextBox firstNameTextBox;
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
         private Guna.UI2.WinForms.Guna2Button saveBtn;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button ChooseBtn;
         private System.Windows.Forms.BindingSource productBindingSource;
         private System.Windows.Forms.ErrorProvider errorProvider;
+        private Guna.UI2.WinForms.Guna2PictureBox productPictureBox;
     }
 }

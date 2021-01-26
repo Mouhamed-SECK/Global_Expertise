@@ -30,33 +30,34 @@ namespace GlobalExpertise.views
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.labelError = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Produit = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.categoryLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.categoryNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.AddCategoryBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.ProductDataGird = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categorie = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ProductImage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.guna2CircleButton16 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton15 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.AddBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.categoryNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.RefreshBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.DeleteBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.SaveBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.EditBtn = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2ShadowPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGird)).BeginInit();
@@ -130,6 +131,34 @@ namespace GlobalExpertise.views
             this.categoryLabel.TabIndex = 48;
             this.categoryLabel.Text = "Categorie";
             // 
+            // categoryNameTextBox
+            // 
+            this.categoryNameTextBox.Animated = true;
+            this.categoryNameTextBox.BorderRadius = 8;
+            this.categoryNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.categoryNameTextBox.DefaultText = "";
+            this.categoryNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.categoryNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.categoryNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.categoryNameTextBox.DisabledState.Parent = this.categoryNameTextBox;
+            this.categoryNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.categoryNameTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.categoryNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.categoryNameTextBox.FocusedState.Parent = this.categoryNameTextBox;
+            this.categoryNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.categoryNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.categoryNameTextBox.HoverState.Parent = this.categoryNameTextBox;
+            this.categoryNameTextBox.Location = new System.Drawing.Point(177, 25);
+            this.categoryNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.categoryNameTextBox.Name = "categoryNameTextBox";
+            this.categoryNameTextBox.PasswordChar = '\0';
+            this.categoryNameTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.categoryNameTextBox.PlaceholderText = "Libelle Categorie";
+            this.categoryNameTextBox.SelectedText = "";
+            this.categoryNameTextBox.ShadowDecoration.Parent = this.categoryNameTextBox;
+            this.categoryNameTextBox.Size = new System.Drawing.Size(265, 43);
+            this.categoryNameTextBox.TabIndex = 26;
+            // 
             // AddCategoryBtn
             // 
             this.AddCategoryBtn.AutoRoundedCorners = true;
@@ -162,22 +191,23 @@ namespace GlobalExpertise.views
             // 
             // ProductDataGird
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.ProductDataGird.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.ProductDataGird.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ProductDataGird.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ProductDataGird.AutoGenerateColumns = false;
             this.ProductDataGird.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductDataGird.BackgroundColor = System.Drawing.Color.White;
             this.ProductDataGird.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProductDataGird.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ProductDataGird.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProductDataGird.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductDataGird.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ProductDataGird.ColumnHeadersHeight = 40;
             this.ProductDataGird.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductId,
@@ -185,16 +215,17 @@ namespace GlobalExpertise.views
             this.codeDataGridViewTextBoxColumn,
             this.name,
             this.quantityDataGridViewTextBoxColumn,
-            this.Categorie});
+            this.Categorie,
+            this.ProductImage});
             this.ProductDataGird.DataSource = this.productBindingSource;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ProductDataGird.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductDataGird.DefaultCellStyle = dataGridViewCellStyle3;
             this.ProductDataGird.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ProductDataGird.EnableHeadersVisualStyles = false;
             this.ProductDataGird.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
@@ -203,6 +234,7 @@ namespace GlobalExpertise.views
             this.ProductDataGird.Name = "ProductDataGird";
             this.ProductDataGird.RowHeadersVisible = false;
             this.ProductDataGird.RowHeadersWidth = 51;
+            this.ProductDataGird.RowTemplate.Height = 140;
             this.ProductDataGird.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductDataGird.Size = new System.Drawing.Size(1072, 597);
             this.ProductDataGird.TabIndex = 0;
@@ -225,13 +257,14 @@ namespace GlobalExpertise.views
             this.ProductDataGird.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ProductDataGird.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.ProductDataGird.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.ProductDataGird.ThemeStyle.RowsStyle.Height = 22;
+            this.ProductDataGird.ThemeStyle.RowsStyle.Height = 140;
             this.ProductDataGird.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ProductDataGird.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // ProductId
             // 
             this.ProductId.DataPropertyName = "ProductId";
+            this.ProductId.FillWeight = 91.71124F;
             this.ProductId.HeaderText = "ProductId";
             this.ProductId.MinimumWidth = 6;
             this.ProductId.Name = "ProductId";
@@ -239,21 +272,64 @@ namespace GlobalExpertise.views
             // Price
             // 
             this.Price.DataPropertyName = "Price";
+            this.Price.FillWeight = 91.71124F;
             this.Price.HeaderText = "Price";
             this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
+            // 
+            // codeDataGridViewTextBoxColumn
+            // 
+            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
+            this.codeDataGridViewTextBoxColumn.FillWeight = 91.71124F;
+            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
+            this.codeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "Name";
+            this.name.FillWeight = 91.71124F;
+            this.name.HeaderText = "Name";
+            this.name.MinimumWidth = 6;
+            this.name.Name = "name";
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.FillWeight = 91.71124F;
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
             // 
             // Categorie
             // 
             this.Categorie.DataPropertyName = "CategoryId";
             this.Categorie.DataSource = this.categoryBindingSource;
             this.Categorie.DisplayMember = "Name";
+            this.Categorie.FillWeight = 91.71124F;
             this.Categorie.HeaderText = "Categorie";
             this.Categorie.MinimumWidth = 6;
             this.Categorie.Name = "Categorie";
             this.Categorie.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Categorie.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Categorie.ValueMember = "catregoryId";
+            // 
+            // categoryBindingSource
+            // 
+            this.categoryBindingSource.DataSource = typeof(GlobalExpertise.models.Category);
+            // 
+            // ProductImage
+            // 
+            this.ProductImage.DataPropertyName = "ProductImage";
+            this.ProductImage.FillWeight = 149.7326F;
+            this.ProductImage.HeaderText = "ProductImage";
+            this.ProductImage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.ProductImage.MinimumWidth = 6;
+            this.ProductImage.Name = "ProductImage";
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(GlobalExpertise.models.Product);
             // 
             // guna2CircleButton16
             // 
@@ -308,34 +384,6 @@ namespace GlobalExpertise.views
             this.AddBtn.TabIndex = 11;
             this.AddBtn.Text = "Ajouter Nouveau Produit";
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // categoryNameTextBox
-            // 
-            this.categoryNameTextBox.Animated = true;
-            this.categoryNameTextBox.BorderRadius = 8;
-            this.categoryNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.categoryNameTextBox.DefaultText = "";
-            this.categoryNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.categoryNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.categoryNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.categoryNameTextBox.DisabledState.Parent = this.categoryNameTextBox;
-            this.categoryNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.categoryNameTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.categoryNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.categoryNameTextBox.FocusedState.Parent = this.categoryNameTextBox;
-            this.categoryNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.categoryNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.categoryNameTextBox.HoverState.Parent = this.categoryNameTextBox;
-            this.categoryNameTextBox.Location = new System.Drawing.Point(177, 25);
-            this.categoryNameTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.categoryNameTextBox.Name = "categoryNameTextBox";
-            this.categoryNameTextBox.PasswordChar = '\0';
-            this.categoryNameTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.categoryNameTextBox.PlaceholderText = "Libelle Categorie";
-            this.categoryNameTextBox.SelectedText = "";
-            this.categoryNameTextBox.ShadowDecoration.Parent = this.categoryNameTextBox;
-            this.categoryNameTextBox.Size = new System.Drawing.Size(265, 43);
-            this.categoryNameTextBox.TabIndex = 26;
             // 
             // RefreshBtn
             // 
@@ -413,35 +461,6 @@ namespace GlobalExpertise.views
             this.EditBtn.TabIndex = 5;
             this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
-            // codeDataGridViewTextBoxColumn
-            // 
-            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
-            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
-            this.codeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "Name";
-            this.name.HeaderText = "Name";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            // 
-            // categoryBindingSource
-            // 
-            this.categoryBindingSource.DataSource = typeof(GlobalExpertise.models.Category);
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(GlobalExpertise.models.Product);
-            // 
             // ProductCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -488,5 +507,6 @@ namespace GlobalExpertise.views
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn Categorie;
+        private System.Windows.Forms.DataGridViewImageColumn ProductImage;
     }
 }

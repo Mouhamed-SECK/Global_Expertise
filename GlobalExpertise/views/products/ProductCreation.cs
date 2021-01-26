@@ -32,7 +32,7 @@ namespace GlobalExpertise.views
 
         private async void AddBtn_Click(object sender, EventArgs e)
         {
-            using (ProductForm popup = new ProductForm(new Product() {  }))
+            using (ProductForm popup = new ProductForm(new Product() { }))
             {
                 if (popup.ShowDialog() == DialogResult.OK)
                 {
@@ -138,6 +138,14 @@ namespace GlobalExpertise.views
         {
             Cursor.Current = Cursors.WaitCursor;
             productBindingSource.DataSource = databaseContext.Products.ToList();
+        /*    DataTable dt = new DataTable();
+            dt.Columns.Add("ProductImage", Type.GetType("System.Byte[]")); 
+
+            foreach (DataRow dataRow in dt.Rows)
+            {
+                dataRow["ProductImage"] 
+            } */
+
             Cursor.Current = Cursors.Default;
         }
     }

@@ -41,5 +41,19 @@ namespace GlobalExpertise.views
                 DialogResult = DialogResult.OK;
             }
         }
+
+        private void ChooseBtn_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "JPEG|*.jpg", ValidateNames = true, Multiselect = false})
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+
+                    productPictureBox.Image = Image.FromFile(ofd.FileName);
+                    product.ProductImage =  product.ImageToByteArray(productPictureBox.Image);
+                   
+                }
+            }
+        }
     }
 }
